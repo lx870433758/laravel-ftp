@@ -12,6 +12,8 @@
 */
 
 Route::get('/','IndexController@index');
-Route::get('/login',  'AuthController@login');
-Route::get('/list',  'AuthController@login');
+
+Route::group(['middleware' => 'ftp_auth'], function () {
+    Route::post('/ftp_index','FtpController@index');
+});
 
