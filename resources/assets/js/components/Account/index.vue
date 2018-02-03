@@ -2,7 +2,7 @@
     <div class="box">
         <el-row :gutter="20" class="top">
             <el-col :span="24">
-                <h1>FTP 个人独立版</h1>
+                <h1>FTP 网页管理</h1>
             </el-col>
         </el-row>
         <div class="c"></div>
@@ -73,7 +73,7 @@
                 </el-col>
             </el-row>
             <el-row>
-                <el-col :span="24" v-for="(item,index) in account_list" id="account_list">
+                <el-col :span="24" :key="index" v-for="(item,index) in account_list" id="account_list">
                     <el-button @click="login(index)">{{ item.name}}</el-button> <el-button type="danger" @click="delteAccount(index)">删除</el-button>
                 </el-col>
             </el-row>

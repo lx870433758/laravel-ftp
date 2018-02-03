@@ -14,6 +14,8 @@
 Route::get('/','IndexController@index');
 
 Route::group(['middleware' => 'ftp_auth'], function () {
-    Route::post('/ftp_index','FtpController@index');
+    Route::post('/get_rawlist','FtpController@get_rawlist');
+    Route::post('/add_dir','FtpController@add_dir');
+    Route::post('/remove','FtpController@remove');
 });
 
