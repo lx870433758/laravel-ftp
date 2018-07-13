@@ -205,7 +205,7 @@
                 })
             },
             upload_file(upload_file_name){
-
+                console(upload_file_name);
             },
             remove(name,type){
                 this.$confirm('确认删除吗？').then(_ => {
