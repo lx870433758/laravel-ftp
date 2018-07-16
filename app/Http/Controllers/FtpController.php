@@ -45,7 +45,7 @@ class FtpController extends Controller
 
     }
 
-    //添加文件
+    //新建文件
     public function upload_file(Request $request)
     {
         try {

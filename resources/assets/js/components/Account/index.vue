@@ -7,6 +7,7 @@
         </el-row>
         <div class="c"></div>
         <div class="left">
+            <el-row>
             <el-popover
                     ref="popover4"
                     placement="bottom"

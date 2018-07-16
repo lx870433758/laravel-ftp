@@ -92644,6 +92644,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -92706,222 +92707,238 @@ var render = function() {
         { staticClass: "left" },
         [
           _c(
-            "el-popover",
-            {
-              ref: "popover4",
-              attrs: { placement: "bottom", width: "400", trigger: "click" }
-            },
+            "el-row",
             [
               _c(
-                "div",
-                { staticClass: "addAccount" },
+                "el-popover",
+                {
+                  ref: "popover4",
+                  attrs: { placement: "bottom", width: "400", trigger: "click" }
+                },
                 [
                   _c(
-                    "el-row",
-                    { attrs: { gutter: 20 } },
+                    "div",
+                    { staticClass: "addAccount" },
                     [
-                      _c("el-col", { attrs: { span: 8 } }, [
-                        _c("div", { staticClass: "grid-content bg-purple" }, [
-                          _vm._v("名称:")
-                        ])
-                      ]),
-                      _vm._v(" "),
                       _c(
-                        "el-col",
-                        { attrs: { span: 16 } },
+                        "el-row",
+                        { attrs: { gutter: 20 } },
                         [
-                          _c("el-input", {
-                            attrs: { placeholder: "请输入自定义名称" },
-                            model: {
-                              value: _vm.name,
-                              callback: function($$v) {
-                                _vm.name = $$v
-                              },
-                              expression: "name"
-                            }
-                          })
+                          _c("el-col", { attrs: { span: 8 } }, [
+                            _c(
+                              "div",
+                              { staticClass: "grid-content bg-purple" },
+                              [_vm._v("名称:")]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "el-col",
+                            { attrs: { span: 16 } },
+                            [
+                              _c("el-input", {
+                                attrs: { placeholder: "请输入自定义名称" },
+                                model: {
+                                  value: _vm.name,
+                                  callback: function($$v) {
+                                    _vm.name = $$v
+                                  },
+                                  expression: "name"
+                                }
+                              })
+                            ],
+                            1
+                          )
                         ],
                         1
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "el-row",
-                    { attrs: { gutter: 20 } },
-                    [
-                      _c("el-col", { attrs: { span: 8 } }, [
-                        _c("div", { staticClass: "grid-content bg-purple" }, [
-                          _vm._v("ip:")
-                        ])
-                      ]),
+                      ),
                       _vm._v(" "),
                       _c(
-                        "el-col",
-                        { attrs: { span: 16 } },
+                        "el-row",
+                        { attrs: { gutter: 20 } },
                         [
-                          _c("el-input", {
-                            attrs: { placeholder: "请输入ip" },
-                            model: {
-                              value: _vm.ip,
-                              callback: function($$v) {
-                                _vm.ip = $$v
-                              },
-                              expression: "ip"
-                            }
-                          })
+                          _c("el-col", { attrs: { span: 8 } }, [
+                            _c(
+                              "div",
+                              { staticClass: "grid-content bg-purple" },
+                              [_vm._v("ip:")]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "el-col",
+                            { attrs: { span: 16 } },
+                            [
+                              _c("el-input", {
+                                attrs: { placeholder: "请输入ip" },
+                                model: {
+                                  value: _vm.ip,
+                                  callback: function($$v) {
+                                    _vm.ip = $$v
+                                  },
+                                  expression: "ip"
+                                }
+                              })
+                            ],
+                            1
+                          )
                         ],
                         1
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "c" }),
-                  _vm._v(" "),
-                  _c(
-                    "el-row",
-                    { attrs: { gutter: 20 } },
-                    [
-                      _c("el-col", { attrs: { span: 8 } }, [
-                        _c("div", { staticClass: "grid-content bg-purple" }, [
-                          _vm._v("port:")
-                        ])
-                      ]),
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "c" }),
                       _vm._v(" "),
                       _c(
-                        "el-col",
-                        { attrs: { span: 16 } },
+                        "el-row",
+                        { attrs: { gutter: 20 } },
                         [
-                          _c("el-input", {
-                            attrs: { placeholder: "请输入端口" },
-                            model: {
-                              value: _vm.port,
-                              callback: function($$v) {
-                                _vm.port = $$v
-                              },
-                              expression: "port"
-                            }
-                          })
+                          _c("el-col", { attrs: { span: 8 } }, [
+                            _c(
+                              "div",
+                              { staticClass: "grid-content bg-purple" },
+                              [_vm._v("port:")]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "el-col",
+                            { attrs: { span: 16 } },
+                            [
+                              _c("el-input", {
+                                attrs: { placeholder: "请输入端口" },
+                                model: {
+                                  value: _vm.port,
+                                  callback: function($$v) {
+                                    _vm.port = $$v
+                                  },
+                                  expression: "port"
+                                }
+                              })
+                            ],
+                            1
+                          )
                         ],
                         1
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "c" }),
-                  _vm._v(" "),
-                  _c(
-                    "el-row",
-                    { attrs: { gutter: 20 } },
-                    [
-                      _c("el-col", { attrs: { span: 8 } }, [
-                        _c("div", { staticClass: "grid-content bg-purple" }, [
-                          _vm._v("用户名:")
-                        ])
-                      ]),
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "c" }),
                       _vm._v(" "),
                       _c(
-                        "el-col",
-                        { attrs: { span: 16 } },
+                        "el-row",
+                        { attrs: { gutter: 20 } },
                         [
-                          _c("el-input", {
-                            attrs: { placeholder: "请输入用户名" },
-                            model: {
-                              value: _vm.user_name,
-                              callback: function($$v) {
-                                _vm.user_name = $$v
-                              },
-                              expression: "user_name"
-                            }
-                          })
+                          _c("el-col", { attrs: { span: 8 } }, [
+                            _c(
+                              "div",
+                              { staticClass: "grid-content bg-purple" },
+                              [_vm._v("用户名:")]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "el-col",
+                            { attrs: { span: 16 } },
+                            [
+                              _c("el-input", {
+                                attrs: { placeholder: "请输入用户名" },
+                                model: {
+                                  value: _vm.user_name,
+                                  callback: function($$v) {
+                                    _vm.user_name = $$v
+                                  },
+                                  expression: "user_name"
+                                }
+                              })
+                            ],
+                            1
+                          )
                         ],
                         1
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "c" }),
-                  _vm._v(" "),
-                  _c(
-                    "el-row",
-                    { attrs: { gutter: 20 } },
-                    [
-                      _c("el-col", { attrs: { span: 8 } }, [
-                        _c("div", { staticClass: "grid-content bg-purple" }, [
-                          _vm._v("密码:")
-                        ])
-                      ]),
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "c" }),
                       _vm._v(" "),
                       _c(
-                        "el-col",
-                        { attrs: { span: 16 } },
+                        "el-row",
+                        { attrs: { gutter: 20 } },
                         [
-                          _c("el-input", {
-                            attrs: {
-                              type: "password",
-                              placeholder: "请输入密码"
+                          _c("el-col", { attrs: { span: 8 } }, [
+                            _c(
+                              "div",
+                              { staticClass: "grid-content bg-purple" },
+                              [_vm._v("密码:")]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "el-col",
+                            { attrs: { span: 16 } },
+                            [
+                              _c("el-input", {
+                                attrs: {
+                                  type: "password",
+                                  placeholder: "请输入密码"
+                                },
+                                model: {
+                                  value: _vm.password,
+                                  callback: function($$v) {
+                                    _vm.password = $$v
+                                  },
+                                  expression: "password"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "c" }),
+                      _vm._v(" "),
+                      _c(
+                        "el-row",
+                        { attrs: { gutter: 20 } },
+                        [
+                          _c(
+                            "el-button",
+                            {
+                              staticClass: "sumbit",
+                              attrs: { type: "button", plain: "" },
+                              on: {
+                                click: function($event) {
+                                  _vm.account()
+                                }
+                              }
                             },
-                            model: {
-                              value: _vm.password,
-                              callback: function($$v) {
-                                _vm.password = $$v
-                              },
-                              expression: "password"
-                            }
-                          })
+                            [_vm._v("确认")]
+                          )
                         ],
                         1
-                      )
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "c" })
                     ],
                     1
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "c" }),
-                  _vm._v(" "),
-                  _c(
-                    "el-row",
-                    { attrs: { gutter: 20 } },
-                    [
-                      _c(
-                        "el-button",
-                        {
-                          staticClass: "sumbit",
-                          attrs: { type: "button", plain: "" },
-                          on: {
-                            click: function($event) {
-                              _vm.account()
-                            }
-                          }
-                        },
-                        [_vm._v("确认")]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "c" })
-                ],
-                1
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "el-button",
-            {
-              directives: [
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "el-button",
                 {
-                  name: "popover",
-                  rawName: "v-popover:popover4",
-                  arg: "popover4"
-                }
-              ]
-            },
-            [_vm._v("添加账号")]
+                  directives: [
+                    {
+                      name: "popover",
+                      rawName: "v-popover:popover4",
+                      arg: "popover4"
+                    }
+                  ]
+                },
+                [_vm._v("添加账号")]
+              )
+            ],
+            1
           )
         ],
         1
@@ -93350,7 +93367,9 @@ var tools = new __WEBPACK_IMPORTED_MODULE_0__function_func__["a" /* default */](
                 }
             });
         },
-        upload_file: function upload_file(upload_file_name) {},
+        upload_file: function upload_file(upload_file_name) {
+            console.log(upload_file_name);
+        },
         remove: function remove(name, type) {
             var _this6 = this;
 
