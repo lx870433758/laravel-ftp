@@ -46,7 +46,7 @@ class FtpController extends Controller
     }
 
     //新建文件
-    public function upload_file(Request $request)
+    public function create_file(Request $request)
     {
         try {
             $dir = $request->input('dir');
@@ -86,7 +86,7 @@ class FtpController extends Controller
                 $res = 402;
         }
         if ($res != 200) {
-            return response()->json(['status' => 402, 'message' => "缺少参数"]);
+            return response()->json(['status' => 402, 'message' => "删除失败"]);
         }
         return response()->json(['status' => 200, 'message' => "请求成功"]);
     }
@@ -148,6 +148,7 @@ class FtpController extends Controller
             return response()->json(['status' => 402, 'message' => "请求失败"]);
         }
     }
+
     public function down_file(Request $request){
         set_time_limit(0);
         $info = $request->input('info');
@@ -174,5 +175,15 @@ class FtpController extends Controller
         ftp_close($request->conn);
         unlink($local);
         return "";
+    }
+
+    public function upload_file(Request $request){
+        $dir = $request->input("dir");
+        ftp_chdir($request->conn, $dir);
+        //ftp_put($request->conn,"target.txt","source.txt",FTP_ASCII);
+        //move_uploaded_file($_FILES["file"]["tmp_name"], "upload/" . $_FILES["file"]["name"]);
+        ftp_nb_fput($request->conn,$_FILES["file"]["name"],fopen($_FILES["file"]["tmp_name"], "a+"),FTP_BINARY,0);
+        ftp_close($request->conn);
+        return 1;
     }
 }
