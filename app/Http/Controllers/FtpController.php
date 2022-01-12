@@ -22,7 +22,7 @@ class FtpController extends Controller
             ftp_close($request->conn);
             return response()->json(['status' => 200, 'data' => ['list' => $data, 'dir' => $dir]]);
         } catch (\Exception $e) {
-            return response()->json(['status' => 402, 'message' => "请求失败"]);
+            return response()->json(['status' => 500, 'message' => "请求失败"]);
         }
     }
 
